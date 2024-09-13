@@ -1,0 +1,70 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for login page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #00c6ff, #0072ff); /* Updated Gradient background */
+}
+
+/* Form styling */
+.login-form {
+  width: 90%;
+  max-width: 400px;
+  background: #fff; /* White background for the form */
+  padding: 30px; /* Increased padding for better spacing */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 15px; /* Increased padding */
+  margin-bottom: 20px; /* Increased spacing */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 15px; /* Increased padding */
+  border: none;
+  border-radius: 5px;
+  background-color: #00c6ff; /* Button background */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0072ff; /* Button hover background */
+}
+
+/* Switch button */
+.switch-button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #00c6ff; /* Color to match button */
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 15px; /* Increased spacing */
+  text-align: center;
+}

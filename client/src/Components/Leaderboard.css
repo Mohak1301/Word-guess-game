@@ -1,0 +1,61 @@
+.leaderboard-container {
+    background: black; /* Background similar to the past scores table */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin:  auto;
+    max-width: 600px;
+    width: 100%;
+    color: white; /* Text color for contrast */
+  }
+  
+  .leaderboard-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00c6ff; /* Accent color similar to the game button */
+  }
+  
+  .leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .leaderboard-table th {
+    background-color: #0072ff; /* Table header background */
+    color: white; /* Table header text color */
+  }
+  
+  .leaderboard-table tr:nth-child(even) {
+    background-color: #1c1c1c; /* Alternate row background color */
+  }
+  
+  .leaderboard-table tr:hover {
+    background-color: #333; /* Hover effect for rows */
+  }
+  
+  .leaderboard-table td {
+    color: #fff; /* Table data text color */
+  }
+  
+  .leaderboard-container ul {
+    list-style-type: none;
+    padding: 0;
+    border: 2px solid red;
+  
+  }
+  
+  .leaderboard-container li {
+    background: #333; /* Different background color for leaderboard items */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white; /* Adjust color for better visibility */
+  }
+  

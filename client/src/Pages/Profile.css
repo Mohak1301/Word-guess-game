@@ -1,0 +1,102 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-evenly; /* Align items to the left and right */
+  width: 100%;
+  margin-bottom: 20px; /* Add margin below header */
+}
+
+.user-info {
+  background: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 50%;
+  max-width: 600px;
+  color: white; /* Adjust color for better visibility */
+  flex: 1; /* Allow flexible growth */
+}
+
+.logout-button {
+  background-color: #ff4d4d; /* Red color for logout */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px; /* Add margin for spacing */
+  display: block; /* Block display for better alignment */
+}
+
+.logout-button:hover {
+  background-color: #ff1a1a; /* Darker red on hover */
+}
+
+.game-card {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  /* padding: 10px 15px; Reduced padding to decrease height */
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50%; /* Adjust width for better layout */
+  max-width: 300px; /* Maximum width to prevent enlargement */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 20px; /* Margin to separate from user-info */
+  height: 6rem;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.profile-content {
+  display: flex; /* Flex layout for content */
+  justify-content: space-between; /* Space between elements */
+  align-items: flex-start; /* Align items to the top */
+  width: 100%;
+  margin-top: 20px; /* Margin top for spacing */
+
+}
+
+.user-scores,
+.leaderboard-container {
+  background: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%; /* Each container takes half the width */
+  color: white; /* Adjust color for better visibility */
+}
+
+.user-scores h2,
+.leaderboard-container h2 {
+  margin-bottom: 15px;
+}
+
+.user-scores ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-scores li {
+  background: #444; /* Slightly different shade for better distinction */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: white; /* Adjust color for better visibility */
+}
+
+.leaderboard-div{
+  width: 50%;
+}

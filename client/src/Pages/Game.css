@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: scroll;
+  box-sizing: border-box;
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem; /* Reduced font size */
+  color: #fff;
+  background-color: #111;
+}
+
+image {
+  display: block;
+}
+
+ul, ol, li {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  /* display: flex;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%; */
+}
+
+header section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  gap: 1.5rem; /* Reduced gap */
+  justify-content: space-between;
+}
+
+h1 {
+  color: rgb(224, 224, 4);
+  line-height: 2.5rem; /* Reduced line-height */
+}
+
+h2 {
+  line-height: 2.5rem; /* Reduced line-height */
+  font-size: 2.5rem; /* Reduced font size */
+}
+
+p {
+  font-size: 1.5rem; /* Reduced font size */
+}
+
+.again {
+  transition: all ease-out 0.4s;
+}
+
+.secret-number {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.hidden-number {
+  background-color: #fff;
+  font-size: 1.5rem; /* Reduced font size */
+  color: rgb(34, 34, 34);
+  padding: 1.5rem; /* Reduced padding */
+  text-align: center;
+}
+
+.hidden-number::after {
+  content: "";
+  width: 100%;
+  background-color: #fff;
+  height: 1rem; /* Reduced height */
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+}
+
+.main-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem; /* Reduced gap */
+  font-size: 1.2rem; /* Reduced font size */
+  line-height: 1.8rem; /* Reduced line-height */
+  margin: 0 auto;
+  margin-top: 10%; /* Reduced margin-top */
+  margin-bottom: 5%; /* Reduced margin-bottom */
+}
+
+.right, .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem; /* Reduced gap */
+}
+
+.win-message {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.number-range-text{
+    width: 100%;
+    text-align: center;
+}
+
+.number-input {
+  background: none;
+  border: 3px solid #fff; /* Reduced border width */
+  font-family: inherit;
+  color: inherit;
+  font-size: 2.5rem; /* Reduced font size */
+  padding: 1.5rem; /* Reduced padding */
+  width: 12rem; /* Reduced width */
+  text-align: center;
+  margin-bottom: 2rem; /* Reduced margin-bottom */
+}
+
+.btn {
+  border: none;
+  background-color: #fff;
+  color: rgb(34, 34, 34);
+  font-family: inherit;
+  font-size: 1.4rem; /* Reduced font size */
+  padding: 1.5rem 2.5rem; /* Reduced padding */
+  cursor: pointer;
+  transition: all ease-out 0.4s;
+}
+
+.label-score {
+  margin-bottom: 1.5rem; /* Reduced margin-bottom */
+}
+
+.game-container {
+  position: relative; /* Allows absolute positioning of child elements */
+}
+
+.again {
+  top: 1rem;
+  left: 1rem;
+  transition: all ease-out 0.4s;
+}
+
+.lost-animation {
+  animation: shake 0.5s ease-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/** Media Query **/
+@media (hover: hover) {
+  .submit-number:hover {
+    background-color: rgb(36, 94, 22);
+    transition: all ease-out 0.4s;
+    color: #fff;
+  }
+
+  .again:hover {
+    background-color: rgb(197, 3, 3);
+    transition: all ease-out 0.4s;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  header section {
+    flex-direction: row;
+  }
+
+  .main-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3%; /* Reduced margin-top */
+  }
+
+  .main-container.winner {
+    grid-template-columns: 1fr;
+  }
+}
