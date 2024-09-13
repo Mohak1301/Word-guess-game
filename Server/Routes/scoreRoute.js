@@ -1,5 +1,5 @@
 import express from "express";
-import {  requireSignIn} from "../middlewares/authMiddleware.js";
+import {  requireSignIn} from "../Middlewares/authMiddleware.js";
 import {  saveUserScoreController, getUserScoreController, getLeaderboardController } from "../Controllers/scoreController.js";
 
 const router = express.Router();
