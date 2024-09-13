@@ -17,9 +17,9 @@ const app = express();
 // Middleware to parse JSON requests and handle CORS
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:3000",  // Ensure CORS allows requests from your frontend
-    methods: "GET,POST,PUT,DELETE",
-    credentials: true
+    origin: process.env.CLIENT_URL,  // Ensure CORS allows requests from your frontend
+    methods: ["GET,POST,PUT,DELETE"],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
 }));
 
 // Define API routes

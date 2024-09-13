@@ -16,7 +16,7 @@ const Leaderboard = () => {
           return;
         }
 
-        const res = await axios.get('http://localhost:5100/api/v1/score/getleaderboard', {
+        const res = await axios.get('/api/v1/score/getleaderboard', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
