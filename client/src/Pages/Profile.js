@@ -22,7 +22,7 @@ const Profile = () => {
         }
 
         // Assuming the backend route is structured to accept the token to get user data
-        const res = await axios.get('http://localhost:5100/api/v1/score/getuserscore/66e30d50679335e6891b50f0', {
+        const res = await axios.get('https://word-guess-game-rbcp.onrender.com/api/v1/score/getuserscore/66e30d50679335e6891b50f0', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
