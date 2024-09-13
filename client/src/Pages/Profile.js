@@ -11,6 +11,8 @@ const Profile = () => {
 
   useEffect(() => {
     // Fetch user data and scores
+    const userId = localStorage.getItem("userId")
+    console.log(userId)
     const fetchUserDataAndScores = async () => {
       try {
         const token = localStorage.getItem('token');
@@ -22,7 +24,7 @@ const Profile = () => {
         }
 
         // Assuming the backend route is structured to accept the token to get user data
-        const res = await axios.get('/api/v1/score/getuserscore/66e30d50679335e6891b50f0', {
+        const res = await axios.get('/api/v1/score/getuserscore/userId', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
