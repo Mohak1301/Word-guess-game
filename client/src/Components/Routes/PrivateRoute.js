@@ -19,7 +19,7 @@ if(localStorage.getItem("token")){
     // Fetch user data and scores
     async function authCheck() {
       const response = await axios.get(
-        `https://word-guess-game-rbcp.onrender.com/api/v1/auth/userauth`,
+        `http://localhost:5100/api/v1/auth/userauth`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
       if (response.data.ok) {

@@ -24,7 +24,7 @@ const GuessMyNumber = () => {
     const fetchHighscore = async () => {
       try {
         const response = await axios.get(
-          `https://word-guess-game-rbcp.onrender.com/api/v1/score/getuserscore/${userId}`,
+          `http://localhost:5100/api/v1/score/getuserscore/${userId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`, // Include token in the header
@@ -55,7 +55,7 @@ const GuessMyNumber = () => {
   const saveScore = async (newScore) => {
     try {
       const response = await axios.post(
-        "https://word-guess-game-rbcp.onrender.com/api/v1/score/savescore",
+        "http://localhost:5100/api/v1/score/savescore",
         { score: newScore },
         { headers: { Authorization: `Bearer ${token}` } }
       );
